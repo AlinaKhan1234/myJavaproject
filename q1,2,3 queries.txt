@@ -1,0 +1,14 @@
+
+Q1,2,3.
+ 
+->
+create database if not exists Users;
+-> 
+create table Users(name varchar(16), yob integer, color varchar(16), primary key(name));
+->    
+insert into Users (name, yob, color) values('Alina', 2001, 'Green')
+insert into Users (name, yob, color) values('Lina', 2000, 'Red')
+insert into Users (name, yob, color) values('Mrs. Khan', 2007, 'Pink')
+
+
+select * from Users
